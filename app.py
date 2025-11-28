@@ -88,6 +88,18 @@ def create_routes(table_name, schema):
         except Exception as e:
             return jsonify({"error": str(e)}), 500
 
+    @app.route(f'/api/{table_name}/<id>', methods=['GET'], endpoint=f'get_{table_name}_details')
+    def get_by_id(id):
+        try:
+            query = f"SELECT {', '.join(columns)} FROM {SCHEMA}.{table_name} WHERE {pk} = :id"
+            rows = execute_query(query, {'id': id}, fetch=True)
+            if not rows:
+                return jsonify({"error": "Record not found"}), 404
+            result = dict(zip(columns, rows[0]))
+            return jsonify(result)
+        except Exception as e:
+            return jsonify({"error": str(e)}), 500
+
     @app.route(f'/api/{table_name}/<id>', methods=['PUT'], endpoint=f'update_{table_name}')
     def update(id):
         try:
@@ -116,6 +128,58 @@ def create_routes(table_name, schema):
 
 for table, schema in TABLES.items():
     create_routes(table, schema)
+
+# --- Entity APIs (Friendly Aliases) ---
+
+@app.route('/api/customers', methods=['GET'])
+def get_customers():
+    return create_routes('dim_customer', TABLES['dim_customer']).get_all() if False else execute_entity_list('dim_customer')
+
+@app.route('/api/customers/<id>', methods=['GET'])
+def get_customer_details(id):
+    return execute_entity_details('dim_customer', id)
+
+@app.route('/api/products', methods=['GET'])
+def get_products():
+    return execute_entity_list('dim_product')
+
+@app.route('/api/products/<id>', methods=['GET'])
+def get_product_details(id):
+    return execute_entity_details('dim_product', id)
+
+@app.route('/api/agents', methods=['GET'])
+def get_agents():
+    return execute_entity_list('dim_agent')
+
+@app.route('/api/agents/<id>', methods=['GET'])
+def get_agent_details(id):
+    return execute_entity_details('dim_agent', id)
+
+def execute_entity_list(table_name):
+    try:
+        schema = TABLES[table_name]
+        columns = schema['columns']
+        limit = request.args.get('limit', 100)
+        query = f"SELECT {', '.join(columns)} FROM {SCHEMA}.{table_name} LIMIT :limit"
+        rows = execute_query(query, {'limit': limit}, fetch=True)
+        results = [dict(zip(columns, row)) for row in rows]
+        return jsonify(results)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+def execute_entity_details(table_name, id):
+    try:
+        schema = TABLES[table_name]
+        columns = schema['columns']
+        pk = schema['pk']
+        query = f"SELECT {', '.join(columns)} FROM {SCHEMA}.{table_name} WHERE {pk} = :id"
+        rows = execute_query(query, {'id': id}, fetch=True)
+        if not rows:
+            return jsonify({"error": "Record not found"}), 404
+        result = dict(zip(columns, rows[0]))
+        return jsonify(result)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 # --- Business Logic APIs ---
 

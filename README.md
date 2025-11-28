@@ -65,9 +65,22 @@ The application will run on `http://localhost:5000`.
 Available for tables: `dim_agent`, `dim_customer`, `dim_product`, `fact_billing`, `fact_call_center_interaction`, `fact_claim`, `fact_claim_payment`, `fact_commission`, `fact_policy`, `fact_underwriting`.
 
 -   `GET /api/<table_name>?limit=100` - List records
+-   `GET /api/<table_name>/<id>` - Get record details
 -   `POST /api/<table_name>` - Create record
 -   `PUT /api/<table_name>/<id>` - Update record
 -   `DELETE /api/<table_name>/<id>` - Delete record
+
+### Entity APIs (Friendly Aliases)
+
+-   **Customers**
+    -   `GET /api/customers` - List customers
+    -   `GET /api/customers/<id>` - Customer details
+-   **Products**
+    -   `GET /api/products` - List products
+    -   `GET /api/products/<id>` - Product details
+-   **Agents**
+    -   `GET /api/agents` - List agents
+    -   `GET /api/agents/<id>` - Agent details
 
 ### Business Logic Endpoints
 
