@@ -1,0 +1,4 @@
+flask
+vertica-python
+python-dotenv
+pandas

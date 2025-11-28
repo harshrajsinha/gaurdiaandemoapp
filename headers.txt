@@ -1,0 +1,10 @@
+dim_agent.csv:agent_id,agent_name,channel,region,status
+dim_customer.csv:customer_id,customer_name,date_of_birth,gender,marital_status,segment,occupation,city,state,country
+dim_product.csv:product_id,product_name,product_type,coverage_type,term_years
+fact_billing.csv:bill_id,policy_id,bill_date,bill_amount,paid_flag,paid_date
+fact_call_center_interaction.csv:interaction_id,customer_id,policy_id,interaction_date,channel,reason_code,resolution_status,handle_time_seconds
+fact_claim.csv:claim_id,policy_id,claim_number,claim_type,claim_status,claim_reported_date,claim_closed_date,claimed_amount,approved_amount
+fact_claim_payment.csv:payment_id,claim_id,payment_date,payment_amount,payment_method
+fact_commission.csv:comm_id,policy_id,agent_id,commission_amount,commission_date
+fact_policy.csv:policy_id,customer_id,agent_id,product_id,policy_number,issue_date,status,sum_assured,annual_premium
+fact_underwriting.csv:uw_id,policy_id,uw_decision,uw_score,risk_class,decision_date

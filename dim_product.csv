@@ -1,0 +1,51 @@
+product_id,product_name,product_type,coverage_type,term_years
+1,Dental Care Premium,Life,Individual,17
+2,Dental Care Basic,Dental,Individual,73
+3,Term Secure 20,Disability,Employer Group,33
+4,Income Protector,Life,Employer Group,78
+5,Disability Shield,Dental,Individual,100
+6,Term Secure 20,Disability,Individual,75
+7,Whole Life Plus,Disability,Employer Group,87
+8,Dental Care Basic,Disability,Employer Group,26
+9,Whole Life Plus,Dental,Employer Group,81
+10,Term Secure 20,Life,Employer Group,99
+11,Income Protector,Dental,Employer Group,16
+12,Dental Care Premium,Life,Family,69
+13,Dental Care Basic,Dental,Family,9
+14,Dental Care Premium,Dental,Family,2
+15,Dental Care Basic,Disability,Individual,56
+16,Income Protector,Dental,Family,91
+17,Term Secure 20,Disability,Individual,94
+18,Dental Care Premium,Dental,Family,79
+19,Dental Care Premium,Disability,Family,56
+20,Disability Shield,Dental,Family,42
+21,Term Secure 20,Life,Family,58
+22,Term Secure 20,Disability,Employer Group,79
+23,Disability Shield,Disability,Family,4
+24,Dental Care Basic,Disability,Individual,63
+25,Term Secure 20,Disability,Family,44
+26,Income Protector,Dental,Employer Group,36
+27,Dental Care Premium,Life,Employer Group,25
+28,Whole Life Plus,Life,Employer Group,53
+29,Dental Care Basic,Dental,Individual,89
+30,Dental Care Basic,Dental,Employer Group,63
+31,Dental Care Basic,Life,Individual,38
+32,Term Secure 20,Disability,Employer Group,32
+33,Income Protector,Dental,Employer Group,48
+34,Dental Care Basic,Dental,Employer Group,45
+35,Dental Care Basic,Dental,Employer Group,43
+36,Income Protector,Dental,Family,35
+37,Income Protector,Disability,Individual,16
+38,Disability Shield,Life,Family,16
+39,Disability Shield,Dental,Employer Group,24
+40,Term Secure 20,Life,Employer Group,62
+41,Income Protector,Dental,Employer Group,98
+42,Dental Care Premium,Dental,Family,13
+43,Term Secure 20,Disability,Individual,47
+44,Term Secure 20,Disability,Individual,91
+45,Dental Care Premium,Life,Family,6
+46,Whole Life Plus,Dental,Family,90
+47,Term Secure 20,Dental,Family,14
+48,Whole Life Plus,Dental,Family,61
+49,Dental Care Basic,Disability,Family,24
+50,Whole Life Plus,Disability,Family,15

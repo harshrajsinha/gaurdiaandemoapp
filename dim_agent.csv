@@ -1,0 +1,51 @@
+agent_id,agent_name,channel,region,status
+1,Luis Wang,Online,East,Active
+2,Wei Garcia,Agency,East,Inactive
+3,Alex Garcia,Broker,South,Inactive
+4,Luis Smith,Agency,East,Active
+5,Luis Smith,Online,West,Inactive
+6,Alex Smith,Online,North,Active
+7,Anita Kumar,Broker,East,Inactive
+8,Luis Chen,Broker,West,Active
+9,Alex Chen,Agency,West,Inactive
+10,Wei Kumar,Online,West,Active
+11,Wei Smith,Call Center,West,Active
+12,Chen Lopez,Online,West,Active
+13,John Kumar,Call Center,North,Inactive
+14,Jane Garcia,Online,South,Inactive
+15,John Doe,Online,West,Inactive
+16,John Doe,Call Center,North,Inactive
+17,Wei Davis,Agency,South,Active
+18,Ravi Smith,Call Center,East,Active
+19,Anita Chen,Agency,North,Inactive
+20,Jane Garcia,Online,South,Inactive
+21,Wei Garcia,Broker,West,Inactive
+22,Wei Patel,Online,South,Active
+23,Ravi Garcia,Broker,South,Inactive
+24,Chen Wang,Call Center,West,Inactive
+25,Alex Doe,Online,North,Active
+26,Maria Garcia,Broker,West,Active
+27,John Smith,Broker,South,Active
+28,Chen Chen,Broker,South,Inactive
+29,Wei Kumar,Broker,East,Active
+30,Wei Kumar,Broker,South,Active
+31,Luis Kumar,Agency,South,Active
+32,Chen Brown,Online,South,Inactive
+33,Luis Wang,Broker,South,Inactive
+34,Ravi Kumar,Online,South,Active
+35,Ravi Wang,Agency,North,Active
+36,Ravi Lopez,Online,East,Active
+37,Alex Kumar,Call Center,West,Active
+38,Jane Chen,Call Center,North,Inactive
+39,Wei Smith,Broker,South,Inactive
+40,Sofia Smith,Call Center,South,Active
+41,Anita Garcia,Call Center,South,Active
+42,Chen Kumar,Online,South,Inactive
+43,John Chen,Online,South,Active
+44,Chen Patel,Agency,South,Active
+45,Jane Chen,Broker,South,Active
+46,John Garcia,Call Center,North,Active
+47,Chen Lopez,Online,South,Inactive
+48,Wei Garcia,Agency,South,Active
+49,Luis Smith,Online,West,Active
+50,John Smith,Broker,West,Active
