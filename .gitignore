@@ -2,3 +2,6 @@
 .venv
 env/
 venv/
+start_server_30214.sh
+stop_server_30214.sh
+server_30214.log
